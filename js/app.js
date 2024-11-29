@@ -7,6 +7,11 @@ function adicionar() {
     alert('Informe o nome do amigo.');
     return;
   }
+  if (amigos.includes(amigo)) {
+    alert('O nome já existe na lista');
+    return;
+  }
+
   let lista = document.getElementById('lista-amigos');
   amigos.push(amigo.value);
 
